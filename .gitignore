@@ -1,0 +1,17 @@
+# Virtual Environment
+venv/
+
+# Environment Variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# Generated Outputs
+**/outputs/generated_profiles.json
+**/outputs/github_readme.md
