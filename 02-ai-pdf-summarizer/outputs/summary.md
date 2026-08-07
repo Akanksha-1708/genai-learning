@@ -1,0 +1,83 @@
+# PDF Summary
+
+### Executive Summary
+This document provides a concise cheat sheet for Git commands, covering essential operations such as working with snapshots, setting up user information, branching and merging, sharing and updating repositories, tracking path changes, temporary commits, rewriting history, inspecting and comparing, and ignoring patterns. The guide is designed for easy reference and covers a wide range of common Git tasks, from basic to advanced.
+
+### Key Points
+1. **Working with Snapshots:**
+   - `git status` to check modified files.
+   - `git add [file]` to stage changes.
+   - `git reset [file]` to unstage changes.
+   - `git diff` to view changes not yet staged.
+   - `git diff --staged` to view staged changes not yet committed.
+   - `git commit -m "[descriptive message]"` to commit staged changes.
+
+2. **Setup and Initialization:**
+   - `git config --global user.name "[firstname lastname]"` to set user name.
+   - `git config --global user.email "[valid-email]"` to set user email.
+   - `git config --global color.ui auto` to enable automatic command line coloring.
+   - `git init` to initialize a directory as a Git repository.
+   - `git clone [url]` to clone a repository from a hosted location.
+
+3. **Branching and Merging:**
+   - `git branch` to list branches.
+   - `git branch [branch-name]` to create a new branch.
+   - `git checkout [branch]` to switch to another branch.
+   - `git merge [branch]` to merge changes from another branch.
+   - `git log` to view commit history.
+
+4. **Sharing and Updating:**
+   - `git remote add [alias] [url]` to add a remote repository.
+   - `git fetch [alias]` to retrieve all branches from a remote.
+   - `git merge [alias]/[branch]` to merge remote branch into current branch.
+   - `git push [alias] [branch]` to push local branch to remote.
+   - `git pull` to fetch and merge changes from a remote.
+
+5. **Tracking Path Changes:**
+   - `git rm [file]` to remove a file and stage the removal.
+   - `git mv [existing-path] [new-path]` to move a file and stage the change.
+   - `git log --stat -M` to show commit logs with path changes.
+
+6. **Temporary Commits:**
+   - `git stash` to save modified and staged changes.
+   - `git stash list` to list stashed changes.
+   - `git stash pop` to apply the top stash.
+   - `git stash drop` to discard the top stash.
+
+7. **Rewriting History:**
+   - `git rebase [branch]` to reapply commits ahead of another branch.
+   - `git reset --hard [commit]` to clear the staging area and rewrite the working tree.
+
+8. **Inspecting and Comparing:**
+   - `git log` to view commit history.
+   - `git log branchB..branchA` to show commits unique to branchA.
+   - `git log --follow [file]` to show commits that changed a file, even across renames.
+   - `git diff branchB...branchA` to show changes unique to branchA.
+   - `git show [SHA]` to view object information.
+
+9. **Ignoring Patterns:**
+   - `git config --global core.excludesfile [file]` to set global ignore patterns.
+   - `.gitignore` file to define specific ignore patterns.
+
+### Important Concepts
+- **Staging Area:** A temporary area where changes are prepared for the next commit.
+- **Branching:** Creating separate lines of development to work on different features or fixes.
+- **Merging:** Combining changes from one branch into another.
+- **Remote Repositories:** Repositories hosted on a server that can be cloned and pushed to.
+- **Stashing:** Temporarily saving changes to work on something else.
+- **Rewriting History:** Modifying the commit history, often to clean up or correct mistakes.
+
+### Keywords
+- Git
+- Staging area
+- User configuration
+- Branching
+- Merging
+- Remote repositories
+- Stashing
+- Rewriting history
+- Commit history
+- Ignoring patterns
+
+### Final Takeaways
+This cheat sheet offers a comprehensive overview of Git commands for various tasks, from basic operations like committing and branching to more advanced features such as rewriting history and ignoring patterns. Users can quickly reference these commands to perform common Git tasks efficiently. Understanding the concepts of staging, branching, and merging is crucial for effective Git usage. Additionally, setting up user information and configuring remote repositories are essential steps for managing Git projects.
