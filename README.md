@@ -7,8 +7,9 @@ This repository contains my Generative AI projects built while learning LangChai
 ## Projects
 
 | Project | Status | Concepts |
-|---------|--------|----------|
+| --------------------------- | --------- | ---------------------------------------------------------------- |
 | ✅ 01 - AI Profile Generator | Completed | PromptTemplate, LCEL, RunnableParallel, Output Parsers, Pydantic |
+| ✅ 02 - AI PDF Summarizer | Completed | PyPDFLoader, RecursiveCharacterTextSplitter, PromptTemplate, LCEL, HuggingFace, Output Parsers |
 
 ---
 
@@ -16,9 +17,11 @@ This repository contains my Generative AI projects built while learning LangChai
 
 - Python
 - LangChain
+- LangChain Community
 - Hugging Face
 - Pydantic
 - Python Dotenv
+- PyPDF
 
 ---
 
