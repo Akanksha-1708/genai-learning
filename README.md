@@ -6,10 +6,11 @@ This repository contains my Generative AI projects built while learning LangChai
 
 ## Projects
 
-| Project | Status | Concepts |
-| --------------------------- | --------- | ---------------------------------------------------------------- |
-| ✅ 01 - AI Profile Generator | Completed | PromptTemplate, LCEL, RunnableParallel, Output Parsers, Pydantic |
-| ✅ 02 - AI PDF Summarizer | Completed | PyPDFLoader, RecursiveCharacterTextSplitter, PromptTemplate, LCEL, HuggingFace, Output Parsers |
+| Project                     | Status    | Concepts                                                                                       |
+| --------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
+| ✅ 01 - AI Profile Generator | Completed | PromptTemplate, LCEL, RunnableParallel, Output Parsers, Pydantic                               |
+| ✅ 02 - AI PDF Summarizer    | Completed | PyPDFLoader, RecursiveCharacterTextSplitter, PromptTemplate, LCEL, HuggingFace, Output Parsers |
+| ✅ 03 - AI Semantic Search   | Completed | RecursiveCharacterTextSplitter, Embeddings, Hugging Face, Chroma, Similarity Search             |
 
 ---
 
@@ -22,6 +23,8 @@ This repository contains my Generative AI projects built while learning LangChai
 - Pydantic
 - Python Dotenv
 - PyPDF
+- Sentence Transformers
+- Chroma
 
 ---
 

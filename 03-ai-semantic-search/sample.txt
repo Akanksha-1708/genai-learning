@@ -1,0 +1,17 @@
+Python is a high-level programming language widely used in software development, data science, machine learning, automation, and artificial intelligence. Python has a simple syntax and a large ecosystem of libraries.
+
+Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data and make predictions or decisions. Common machine learning approaches include supervised learning, unsupervised learning, and reinforcement learning.
+
+Deep learning is a subset of machine learning that uses neural networks with multiple layers. Deep learning is widely used in computer vision, natural language processing, speech recognition, and generative AI.
+
+Large Language Models are neural network models trained on large amounts of text. LLMs can perform tasks such as text generation, summarization, translation, question answering, and code generation.
+
+Transformers are neural network architectures that use attention mechanisms to process relationships between tokens. They became an important architecture for modern natural language processing and large language models.
+
+Embeddings are numerical vector representations of text. Similar pieces of text tend to have similar vector representations, allowing systems to perform semantic similarity searches.
+
+Vector stores are systems designed to store and search vector representations efficiently. They can return documents whose embeddings are most similar to a query embedding.
+
+Semantic search focuses on the meaning of a query rather than simply matching exact keywords. It uses representations such as embeddings to identify conceptually relevant information.
+
+Retrieval-Augmented Generation combines information retrieval with language generation. A retrieval system first finds relevant information, and an LLM then uses that information to generate an answer.
