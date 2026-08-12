@@ -1,0 +1,7 @@
+The AI Profile Generator is a Generative AI project that creates multiple professional profile formats from structured user information. It uses Pydantic for input validation, PromptTemplate for prompt construction, LCEL for chaining components, RunnableParallel for generating multiple outputs, and output parsers for handling model responses.
+
+The AI PDF Summarizer loads PDF documents, splits them into chunks, sends document content to a Hugging Face language model, and generates structured summaries. It uses PyPDFLoader, RecursiveCharacterTextSplitter, PromptTemplate, LCEL, and output parsing.
+
+The AI Semantic Search project converts text chunks into embeddings using a Hugging Face Sentence Transformer model and stores them in Chroma. It performs similarity search to retrieve relevant document chunks for a user query.
+
+The goal of these projects is to progressively learn Generative AI application development, starting with LangChain fundamentals and moving toward retrieval and RAG systems.

@@ -1,0 +1,17 @@
+LangChain is a framework for building applications powered by language models.
+
+LangChain Expression Language, also called LCEL, provides a declarative way to compose components into chains using the pipe operator.
+
+Prompt templates allow developers to create reusable prompts with variables that can be filled with dynamic information.
+
+Document loaders load information from different sources and convert it into LangChain Document objects.
+
+Text splitters divide large documents into smaller chunks so they can be processed efficiently by language models and embedding models.
+
+Embeddings convert text into numerical vectors that capture semantic information.
+
+Vector stores store embedding vectors and allow similarity searches over them.
+
+Retrievers provide a standard interface for retrieving relevant documents for a query. A vector store can be converted into a retriever.
+
+Retrieval-Augmented Generation uses a retriever to find relevant documents and passes those documents as context to a language model before generating an answer.

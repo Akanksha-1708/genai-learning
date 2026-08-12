@@ -1,0 +1,13 @@
+Artificial Intelligence is the field of creating systems that can perform tasks that normally require human intelligence. These tasks include reasoning, learning, perception, language understanding, and decision making.
+
+Machine Learning is a subset of Artificial Intelligence in which systems learn patterns from data instead of being explicitly programmed for every task.
+
+Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers. It is widely used in computer vision, natural language processing, speech recognition, and generative AI.
+
+Large Language Models are neural network models trained on very large collections of text. They can perform tasks such as text generation, summarization, translation, question answering, and code generation.
+
+Generative AI refers to AI systems that can generate new content such as text, images, audio, video, and code.
+
+Embeddings are numerical representations of text. They represent the semantic meaning of text as vectors and allow systems to compare pieces of information based on similarity.
+
+Retrieval-Augmented Generation combines information retrieval with language generation. A retrieval system finds relevant information from an external knowledge source, and a language model uses that information to generate an answer.
