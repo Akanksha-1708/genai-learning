@@ -61,7 +61,6 @@ def get_weather(city: str) -> str:
         "mumbai": "Humid, 29°C",
         "bangalore": "Partly cloudy, 25°C"
     }
-
     return weather_data.get(
         city.lower(),
         f"Weather information for {city} is not available."
@@ -92,8 +91,19 @@ def run_assistant(question):
     messages = [
         HumanMessage(content=question)
     ]
-    response = model_with_tools.invoke(messages)
+
+    response=model_with_tools.invoke(messages)
+    print("\n[Tool Calls]")
+    if response.tool_calls:
+        for tool_call in response.tool_calls:
+            print(
+                f"-{tool_call['name']}"
+                f"({tool_call['args']})"
+            )
+    else:
+        print("-None")
     messages.append(response)
+    
     if not response.tool_calls:
         return response.content
     
