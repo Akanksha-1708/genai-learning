@@ -12,7 +12,7 @@ This repository contains my Generative AI projects built while learning LangChai
 | ✅ 02 - AI PDF Summarizer    | Completed | PyPDFLoader, RecursiveCharacterTextSplitter, PromptTemplate, LCEL, HuggingFace, Output Parsers |  
 | ✅ 03 - AI Semantic Search   | Completed | RecursiveCharacterTextSplitter, Embeddings, Hugging Face, Chroma, Similarity Search             |  
 | ✅ 04 - Personal Knowledge RAG | Completed | Document Loaders, Text Splitters, Embeddings, Chroma, Retrievers, PromptTemplate, Hugging Face, RAG |  
-| ✅ 05 - Tool-Calling AI Assistant | In Progress | Tools, @tool, bind_tools(), Tool Calling, Tool Arguments, ToolMessage, Multiple Tools              |  
+| ✅ 05 - Tool-Calling AI Assistant | Completed | Tools, @tool, bind_tools(), Tool Calling, Tool Arguments, ToolMessage, Multiple Tools              |  
   
 ---  
   
