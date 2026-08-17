@@ -6,16 +6,26 @@ from dotenv import load_dotenv
 load_dotenv()
 
 @tool
-def calculator(expression:str)->str:
+def calculator(expression: str) -> str:
     """
     Calculate a mathematical expression.
-    Use this tool for arithmetic calculations.
+    The expression must contain only numeric values
+    and mathematical operators.
+    Example:
+    8800 + 500
+    15 / 100 * 8800
+    Do not pass variable names, tool names,
+    dictionaries, or natural language.
     """
     try:
-        result=eval(expression,{"__builtins__":{}},{})
+        result = eval(
+            expression,
+            {"__builtins__": {}},
+            {}
+        )
         return str(result)
     except Exception:
-        return "Unable to calculate the expression"
+        return "Unable to calculate the expression."
 
 @tool
 def currency_convertor(amount:float,from_currency:str,to_currency:str)->str:
@@ -35,8 +45,10 @@ def currency_convertor(amount:float,from_currency:str,to_currency:str)->str:
         return f"{to_currency} is not supported"
     usd_amount=amount/rates[from_currency]
     converted_amount=usd_amount*rates[to_currency]
-    return(f"{amount} {from_currency}={converted_amount:.2f} {to_currency}")
-
+    return (
+    f"Conversion result: {converted_amount:.2f} {to_currency}. "
+    f"Numeric value: {converted_amount:.2f}"
+    )
 @tool
 def get_weather(city:str)->str:
     """Get sample weather information for a city"""
@@ -59,20 +71,33 @@ model=ChatHuggingFace(llm=llm)
 agent = create_agent(
     model=model,
     tools=tools,
-    system_prompt="""
+system_prompt = """
 You are a helpful AI assistant.
-You have access to several tools that can help you
-complete specific tasks.
-Use a tool when it is necessary or useful for the task.
-You may answer directly using your own knowledge when
-no tool is required.
-The available tools are specialized:
-- Calculator: mathematical calculations
-- Currency Converter: currency conversions
-- Weather: weather information for supported cities
-Do not use an unrelated tool just because a tool is available.
-For multi-step tasks, use the result of one action
-to decide what to do next.
+
+You have access to several specialized tools.
+
+Use a tool when it is necessary or useful.
+You may answer directly when no tool is required.
+
+For multi-step tasks:
+1. Use the appropriate first tool.
+2. Read the result returned by that tool.
+3. Extract the actual value from the result.
+4. Use that value as the input to the next tool.
+5. Continue until the task is complete.
+
+When calling the calculator, pass only a valid
+mathematical expression containing numbers and operators.
+
+For example, if a currency tool returns:
+"Numeric value: 8800.00"
+
+and the user asks to add 500, call:
+calculator("8800 + 500")
+
+Do not pass tool names, result objects,
+variable names, or dictionary expressions to the calculator.
+
 Do not invent tool results.
 """
 )
@@ -100,6 +125,10 @@ def main():
             response=agent.invoke(
                 {"messages":[{"role":"user","content":question}]}
             )
+            print("\nAgent messages:")
+            for message in response["messages"]:
+                print(type(message).__name__,"->",getattr(message,"content",""))
+
             print("\nAssistant:")
             print(response["messages"][-1].content)
 
