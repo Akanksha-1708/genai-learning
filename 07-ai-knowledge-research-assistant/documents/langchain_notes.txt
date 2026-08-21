@@ -1,0 +1,15 @@
+LangChain is a framework used to build applications powered by large language models.
+
+A prompt template allows developers to create reusable prompts with variables.
+
+LCEL, or LangChain Expression Language, allows components such as prompts, models, and output parsers to be connected using the pipe operator.
+
+Document loaders are used to load data from files and other sources.
+
+Text splitters divide large documents into smaller chunks.
+
+Vector stores store embeddings and allow similarity search.
+
+Retrievers return relevant documents for a user query.
+
+RAG stands for Retrieval-Augmented Generation. In a RAG system, relevant information is retrieved from a knowledge source and provided to the language model as context before generating an answer.

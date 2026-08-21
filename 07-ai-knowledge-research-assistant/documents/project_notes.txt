@@ -1,0 +1,13 @@
+The GenAI Learning Journey repository contains multiple projects created while learning Generative AI and LangChain.
+
+Project 01 is an AI Profile Generator. It covers prompt templates, LCEL, runnable parallel operations, output parsers, and Pydantic.
+
+Project 02 is an AI PDF Summarizer. It covers PDF document loading, text splitting, prompt templates, LCEL, Hugging Face models, and output parsing.
+
+Project 03 is an AI Semantic Search project. It covers embeddings, Chroma vector stores, and similarity search.
+
+Project 04 is a Personal Knowledge RAG Assistant. It covers document loading, chunking, embeddings, Chroma, retrievers, prompting, and RAG.
+
+Project 05 is a Tool-Calling AI Assistant. It covers tools, the tool decorator, bind_tools, tool calling, tool arguments, tool messages, and multiple tools.
+
+Project 06 is a Multi-Tool AI Agent. It covers agents, create_agent, multiple tools, agent loops, tool selection, and multi-step execution.

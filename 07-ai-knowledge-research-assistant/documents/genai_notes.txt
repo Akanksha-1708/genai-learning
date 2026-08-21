@@ -1,0 +1,7 @@
+Generative AI is a branch of artificial intelligence that can create new content such as text, images, audio, video, and code.
+
+Large Language Models, also called LLMs, are trained on large amounts of text data. They learn patterns in language and can perform tasks such as answering questions, summarization, translation, reasoning, and code generation.
+
+Prompt engineering is the process of designing effective instructions for language models.
+
+Embeddings are numerical vector representations of data. Text with similar meanings usually has embeddings that are close to each other in vector space.
